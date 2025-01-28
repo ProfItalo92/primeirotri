@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML, CSS e JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aprendendo HTML, CSS e JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="html">
+            <h2>HTML - Estrutura da Web</h2>
+            <p>HTML (HyperText Markup Language) é a linguagem de marcação usada para estruturar o conteúdo na web.</p>
+            <p><strong>História:</strong> Criado por Tim Berners-Lee em 1989, o HTML foi a primeira linguagem usada para criar páginas web, permitindo a marcação de texto, imagens, links, listas e outros elementos essenciais.</p>
+            <p><strong>Objetivo:</strong> O HTML tem como objetivo estruturar o conteúdo na web, organizando textos, imagens, links, formulários e outros elementos, sem lidar com a lógica de programação.</p>
+            <button onclick="exibirExemploHTML()">Mostrar Exemplo</button>
+            <div id="exemploHTML"></div>
+        </section>
+
+        <section id="css">
+            <h2>CSS - Estilizando a Web</h2>
+            <p>CSS (Cascading Style Sheets) é utilizado para estilizar a aparência dos elementos HTML.</p>
+            <p><strong>História:</strong> O CSS foi criado por Håkon Wium Lie e Bert Bos em 1994, com o objetivo de separar o conteúdo da web da sua aparência.</p>
+            <p><strong>Objetivo:</strong> O CSS é responsável por estilizar os elementos HTML, controlando cores, fontes, tamanhos, espaçamentos e layout, separando o design da estrutura da página.</p>
+            <button onclick="exibirExemploCSS()">Mostrar Exemplo</button>
+            <div id="exemploCSS"></div>
+        </section>
+
+        <section id="javascript">
+            <h2>JavaScript - Tornando a Web Interativa</h2>
+            <p>JavaScript é a linguagem de programação que adiciona interatividade e dinamismo às páginas web.</p>
+            <p><strong>História:</strong> Criado por Brendan Eich em 1995, o JavaScript permite a interação do usuário com a página web, criando funcionalidades dinâmicas como animações, validações de formulários e mais.</p>
+            <p><strong>Objetivo:</strong> JavaScript tem como objetivo adicionar comportamento interativo às páginas web, manipulando conteúdos, eventos de usuário e comunicação com servidores.</p>
+            <button onclick="exibirExemploJS()">Mostrar Exemplo</button>
+            <div id="exemploJS"></div>
+        </section>
+
+        <section id="quiz">
+            <h2>Quiz sobre HTML, CSS e JavaScript</h2>
+            <p>Teste seus conhecimentos sobre HTML, CSS e JavaScript com o quiz abaixo:</p>
+            <form id="quizForm">
+                <div>
+                    <p>1. Qual é o principal objetivo do HTML?</p>
+                    <label><input type="radio" name="q1" value="b"> Estruturar o conteúdo da página.</label><br>
+                    <label><input type="radio" name="q1" value="a"> Estilizar o conteúdo da página.</label><br>
+                    <label><input type="radio" name="q1" value="c"> Tornar a página interativa.</label><br>
+                    <label><input type="radio" name="q1" value="d"> Criar animações na página.</label>
+                </div>
+                <div>
+                    <p>2. Quem foi o criador do HTML?</p>
+                    <label><input type="radio" name="q2" value="b"> Tim Berners-Lee.</label><br>
+                    <label><input type="radio" name="q2" value="a"> Bert Bos.</label><br>
+                    <label><input type="radio" name="q2" value="c"> Brendan Eich.</label><br>
+                    <label><input type="radio" name="q2" value="d"> Håkon Wium Lie.</label>
+                </div>
+                <div>
+                    <p>3. O que é CSS?</p>
+                    <label><input type="radio" name="q3" value="a"> Uma linguagem de programação.</label><br>
+                    <label><input type="radio" name="q3" value="b"> Uma linguagem de marcação.</label><br>
+                    <label><input type="radio" name="q3" value="c"> Uma linguagem de estilo.</label><br>
+                    <label><input type="radio" name="q3" value="d"> Uma ferramenta de design gráfico.</label>
+                </div>
+                <div>
+                    <p>4. Qual é o principal objetivo do JavaScript?</p>
+                    <label><input type="radio" name="q4" value="b"> Estilizar o conteúdo da página.</label><br>
+                    <label><input type="radio" name="q4" value="a"> Estruturar o conteúdo da página.</label><br>
+                    <label><input type="radio" name="q4" value="c"> Tornar a página interativa.</label><br>
+                    <label><input type="radio" name="q4" value="d"> Criar imagens e gráficos.</label>
+                </div>
+                <div>
+                    <p>5. Em que ano o HTML foi criado?</p>
+                    <label><input type="radio" name="q5" value="a"> 1989.</label><br>
+                    <label><input type="radio" name="q5" value="b"> 1994.</label><br>
+                    <label><input type="radio" name="q5" value="c"> 1995.</label><br>
+                    <label><input type="radio" name="q5" value="d"> 2000.</label>
+                </div>
+                <div>
+                    <p>6. Quem criou o JavaScript?</p>
+                    <label><input type="radio" name="q6" value="b"> Brendan Eich.</label><br>
+                    <label><input type="radio" name="q6" value="a"> Tim Berners-Lee.</label><br>
+                    <label><input type="radio" name="q6" value="c"> Bert Bos.</label><br>
+                    <label><input type="radio" name="q6" value="d"> Håkon Wium Lie.</label>
+                </div>
+                <div>
+                    <p>7. O que é necessário para adicionar estilo a um site?</p>
+                    <label><input type="radio" name="q7" value="a"> JavaScript.</label><br>
+                    <label><input type="radio" name="q7" value="b"> HTML.</label><br>
+                    <label><input type="radio" name="q7" value="c"> CSS.</label><br>
+                    <label><input type="radio" name="q7" value="d"> Nenhuma das alternativas.</label>
+                </div>
+                <div>
+                    <p>8. O que significa CSS?</p>
+                    <label><input type="radio" name="q8" value="b"> Cascading Style Sheets.</label><br>
+                    <label><input type="radio" name="q8" value="a"> Creative Style Sheets.</label><br>
+                    <label><input type="radio" name="q8" value="c"> Colorful Style Sheets.</label><br>
+                    <label><input type="radio" name="q8" value="d"> None Style Sheets.</label>
+                </div>
+                <div>
+                    <p>9. Em que linguagem é feito o código de comportamento de uma página web?</p>
+                    <label><input type="radio" name="q9" value="a"> HTML.</label><br>
+                    <label><input type="radio" name="q9" value="b"> CSS.</label><br>
+                    <label><input type="radio" name="q9" value="c"> JavaScript.</label><br>
+                    <label><input type="radio" name="q9" value="d"> PHP.</label>
+                </div>
+                <div>
+                    <p>10. Em que ano o CSS foi criado?</p>
+                    <label><input type="radio" name="q10" value="b"> 1994.</label><br>
+                    <label><input type="radio" name="q10" value="a"> 1995.</label><br>
+                    <label><input type="radio" name="q10" value="c"> 2000.</label><br>
+                    <label><input type="radio" name="q10" value="d"> 1989.</label>
+                </div>
+                <button type="button" onclick="verificarRespostas()">Verificar Respostas</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aprendendo HTML, CSS e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
